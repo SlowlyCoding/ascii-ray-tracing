@@ -1,6 +1,7 @@
 #include "scene.hpp"
 #include "vector.hpp"
 #include "ray.hpp"
+#include <vector>
 #include <thread>
 
 class Renderer {
