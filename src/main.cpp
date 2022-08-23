@@ -1,13 +1,5 @@
-#include <iostream>
-#include <chrono>
-#include <vector>
-#include <thread>
-#include <string>
-#include <math.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
-#include "vector.hpp"
-#include "ray.hpp"
 #include "scene.hpp"
 #include "window.hpp"
 #include "renderer.hpp"
