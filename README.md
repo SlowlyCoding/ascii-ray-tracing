@@ -8,8 +8,6 @@ A simple ray tracer inspired by the "Ray Tracing in one weeked" book, which disp
 
 ## Installation
 
-Make sure you have [rust](https://www.rust-lang.org/tools/install) installed
-
 ```shell
 git clone https://github.com/SlowlyCoding/ascii-ray-tracer
 ```
