@@ -9,10 +9,10 @@ A simple ray tracer inspired by the "Ray Tracing in one weeked" book, which disp
 ## Installation
 
 ```shell
-git clone https://github.com/SlowlyCoding/ascii-ray-tracer
+git clone https://github.com/SlowlyCoding/ascii-ray-tracing
 ```
 ```shell
-cd ascii-ray-tracer
+cd ascii-ray-tracing
 ```
 ```shell
 make
