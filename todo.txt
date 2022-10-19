@@ -1,4 +1,0 @@
-need to create a way of defining the scene in a file and then read from that file
-if possible add a way of defining camera paths for better animations
-maybe rewrite the whole renderer with better use of pointers (this was my first project where I actually used pointers lul)
-

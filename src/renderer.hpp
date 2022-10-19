@@ -11,17 +11,19 @@ public:
   Renderer(int window_width, int window_height, bool shadows) : 
     window_width(window_width), window_height(window_height), shadows(shadows) {};
   /*
-    Traces a ray through the scene and and returns the "color" of that pixel
+    Traces a ray through the scene and and returns the "color" of that pixel.
     In this ray tracer colors are displayed using characters
   */
   char trace_ray(Object_List *scene, Ray *ray, Vec3f *light);
   /*
-    Renders the Scene by calcuating what character each pixel should display
+    Renders the Scene by calcuating what character each pixel should display.
     render_framepart() renders a specified part of the frame
-    threaded_render() creates threads and calls render_framepart()
   */
   void render_framepart(Object_List *scene, Camera *camera, Vec3f *light, char *pixels,
                         Vec3f pixel0, Vec3f pixel_step_x, Vec3f pixel_step_y, int thread_amount, int part);
+  /*
+    creates threads and  calls render_framepart()
+  */
   void threaded_render(Object_List *scene, Camera *camera, Vec3f *light, char *pixels, int thread_amount);
 };
 
@@ -59,7 +61,7 @@ char Renderer::trace_ray(Object_List *scene, Ray *ray, Vec3f *light) {
   return pixel;
 }
 
-void Renderer::render_framepart(Object_List *scene, Camera *camera, Vec3f *light, char *pixels, 
+void Renderer::render_framepart(Object_List *scene, Camera *camera, Vec3f *light, char *pixels,
                                 Vec3f pixel0, Vec3f pixel_step_x, Vec3f pixel_step_y, int thread_amount, int part) {
   // assign each thread a part of the frame
   int y = window_height * (1./thread_amount) * part;
